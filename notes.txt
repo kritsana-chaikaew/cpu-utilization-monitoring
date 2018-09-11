@@ -1,0 +1,15 @@
+Create Index
+    -   PUT cpu_usage
+Put Mapping
+    -   PUT twitter/_mapping/_doc 
+        {
+            "properties": {
+                "time": {
+                    "type": "date"
+                }
+                "value": {
+                    "type": "float"
+                }
+
+            }
+        }
