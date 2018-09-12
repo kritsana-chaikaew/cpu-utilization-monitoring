@@ -33,6 +33,12 @@ option = {
 
 socket.on('broadcast', function(data) {
     data = JSON.parse(data);
+    var date = new Date(data["name"]);
+    var second = date.getSeconds().toString();
+    var minute = date.getMinutes().toString();
+    var hour = date.getHours().toString();
+    data["name"] = hour + ":" + minute + ":" + second; 
+
     console.log(data);
 
     if (buffer.length < 10) {
