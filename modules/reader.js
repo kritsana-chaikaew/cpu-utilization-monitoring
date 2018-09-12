@@ -5,6 +5,6 @@ exports.now = (cb) => {
         os.cpuUsage(function (value) {
             cb(value);    
         });
-    }, 0);
+    }, 1000);
 };
 

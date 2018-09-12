@@ -11,5 +11,5 @@ exports.broadcast = (data) => {
 }
 
 http.listen(4000, "192.168.1.3", function(){
-      console.log('listening on *:4000');
+      console.log('listening on 4000');
 });

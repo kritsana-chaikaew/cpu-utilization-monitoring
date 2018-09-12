@@ -5,7 +5,7 @@ const indexer = require('./modules/indexer.js');
 let buffer = [];
 
 reader.now((value) => {
-    var data = {time: Date.now(), value:value*100};
+    var data = {name: Date.now(), value:value*100};
     sender.broadcast(JSON.stringify(data));
     
     buffer.push(data);
