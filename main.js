@@ -1,6 +1,6 @@
-const reader = require('./reader.js');
-const sender = require('./sender.js');
-const indexer = require('./indexer.js');
+const reader = require('./modules/reader.js');
+const sender = require('./modules/sender.js');
+const indexer = require('./modules/indexer.js');
 
 let buffer = [];
 
