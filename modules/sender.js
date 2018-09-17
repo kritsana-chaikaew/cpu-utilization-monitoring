@@ -10,6 +10,6 @@ exports.broadcast = (data) => {
     io.sockets.emit('broadcast', data);
 }
 
-http.listen(4000, "192.168.1.3", function(){
+http.listen(4000, "0.0.0.0", function(){
       console.log('listening on 4000');
 });
